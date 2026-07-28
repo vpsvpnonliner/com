@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0a0c12" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <title>Условия использования — VPS-VPN</title>
+    <meta name="description" content="Условия оказания услуг VPS-VPN. Описание сервиса, права и обязанности, порядок оплаты и возврата.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vps-vpn.online/terms.html">
+    <meta property="og:title" content="Условия использования VPS-VPN">
+    <meta property="og:description" content="Правила пользования нашим сервисом личного VPS/VPN.">
+    <meta property="og:url" content="https://vps-vpn.online/terms.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ========== RESET & BASE ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            scroll-behavior: smooth;
+            line-height: 1.5;
+        }
+
+        /* ========== ТЕМНАЯ ТЕМА ========== */
+        body.dark {
+            background: #0a0c12;
+            color: #ffffff;
+        }
+
+        body.dark .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: radial-gradient(circle at 20% 30%, rgba(0, 180, 180, 0.08), transparent 60%),
+                        radial-gradient(circle at 85% 70%, rgba(100, 70, 220, 0.12), transparent 70%),
+                        #0a0c12;
+        }
+
+        body.dark .card, body.dark .feature-card, body.dark .stat-card, body.dark .platform-card,
+        body.dark .pricing-card, body.dark .sidebar-widget {
+            background: rgba(25, 30, 45, 0.9);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        body.dark .comparison-table {
+            background: rgba(18, 22, 35, 0.9);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        body.dark .nav-links a, body.dark .footer {
+            color: #e0e0e0;
+        }
+
+        body.dark .nav-links a:hover {
+            color: #a5f0ff;
+        }
+
+        body.dark .theme-toggle {
+            background: rgba(255,255,255,0.08);
+            color: #e0e0e0;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        body.dark .theme-toggle:hover {
+            background: rgba(255,255,255,0.15);
+            color: #a5f0ff;
+        }
+
+        body.dark .stat span, body.dark .stat-card .stat-number,
+        body.dark .highlight-number, body.dark .pricing-card .price {
+            color: #a5f0ff;
+        }
+
+        body.dark .badge {
+            background: rgba(165, 240, 255, 0.12);
+            border: 1px solid rgba(165, 240, 255, 0.3);
+            color: #a5f0ff;
+        }
+
+        body.dark .gradient-text {
+            background: linear-gradient(135deg, #a5f0ff, #7c3aff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        body.dark .btn-primary {
+            background: linear-gradient(95deg, #7c3aff, #5a2dca);
+            box-shadow: 0 8px 20px rgba(124, 58, 255, 0.3);
+        }
+
+        body.dark .btn-outline {
+            border: 1px solid rgba(165, 240, 255, 0.5);
+            color: #a5f0ff;
+        }
+
+        body.dark .btn-outline:hover {
+            background: rgba(165, 240, 255, 0.1);
+            border-color: #a5f0ff;
+        }
+
+        body.dark .hero-image {
+            background: rgba(255,255,255,0.03);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(124,58,255,0.3);
+        }
+
+        body.dark .check, body.dark .feature-list i {
+            color: #2dd4bf;
+        }
+
+        body.dark .footer {
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        body.dark .toast {
+            background: #1a1f2e;
+            color: #ffffff;
+            border-left: 4px solid #2dd4bf;
+        }
+
+        body.dark .price-badge, body.dark .old-tv-badge {
+            background: rgba(45,212,191,0.15);
+            color: #2dd4bf;
+        }
+
+        body.dark .platform-card i, body.dark .service-item i {
+            color: #a5f0ff;
+        }
+
+        /* ========== СВЕТЛАЯ ТЕМА ========== */
+        body.light {
+            background: #ffffff;
+            color: #222222;
+        }
+
+        body.light .bg-glow {
+            display: none;
+        }
+
+        body.light .card, body.light .feature-card, body.light .stat-card, 
+        body.light .platform-card, body.light .pricing-card, body.light .sidebar-widget {
+            background: #ffffff;
+            border: 1px solid #ebebeb;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        body.light .card i, body.light .feature-card i, body.light .platform-card i,
+        body.light .service-item i {
+            color: #ff385c;
+        }
+
+        body.light .gradient-text {
+            background: linear-gradient(135deg, #ff385c, #dd1a4a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        body.light .badge {
+            background: rgba(255,56,92,0.08);
+            border: 1px solid rgba(255,56,92,0.3);
+            color: #ff385c;
+        }
+
+        body.light .btn-primary {
+            background: linear-gradient(95deg, #ff385c, #dd1a4a);
+            box-shadow: 0 8px 20px rgba(255,56,92,0.25);
+        }
+
+        body.light .btn-primary:hover {
+            box-shadow: 0 12px 28px rgba(255,56,92,0.35);
+        }
+
+        body.light .btn-outline {
+            border: 1px solid #dddddd;
+            color: #222222;
+        }
+
+        body.light .btn-outline:hover {
+            background: #f7f7f7;
+            border-color: #222222;
+        }
+
+        body.light .nav-links a {
+            color: #222222;
+        }
+
+        body.light .nav-links a:hover {
+            color: #ff385c;
+        }
+
+        body.light .theme-toggle {
+            background: #f7f7f7;
+            color: #222222;
+            border: 1px solid #ebebeb;
+        }
+
+        body.light .theme-toggle:hover {
+            background: #ebebeb;
+        }
+
+        body.light .comparison-table {
+            background: #ffffff;
+            border: 1px solid #ebebeb;
+        }
+
+        body.light th {
+            color: #ff385c;
+        }
+
+        body.light .stat span, body.light .stat-card .stat-number,
+        body.light .highlight-number, body.light .pricing-card .price {
+            color: #ff385c;
+        }
+
+        body.light .form-group input {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            color: #222222;
+        }
+
+        body.light .form-group input:focus {
+            border-color: #ff385c;
+            outline: none;
+        }
+
+        body.light #waitlist > div, body.light .cta-section {
+            background: #f7f7f7;
+            border: 1px solid #ebebeb;
+        }
+
+        body.light .footer {
+            color: #717171;
+            border-top: 1px solid #ebebeb;
+        }
+
+        body.light .toast {
+            background: #ffffff;
+            color: #222222;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-left-color: #ff385c;
+        }
+
+        body.light .price-badge, body.light .old-tv-badge {
+            background: rgba(255,56,92,0.1);
+            color: #ff385c;
+        }
+
+        body.light .check {
+            color: #2dd4bf;
+        }
+
+        /* ========== ОСНОВНЫЕ СТИЛИ ========== */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            border-radius: 40px;
+            padding: 6px 14px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            width: fit-content;
+        }
+
+        .btn-primary, .btn-outline {
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+        }
+
+        .btn-primary {
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            font-weight: 500;
+        }
+
+        .btn-primary:hover, .btn-outline:hover {
+            transform: translateY(-2px);
+        }
+
+        .theme-toggle {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border-radius: 40px;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========== СТИЛИ ДЛЯ ЮРИДИЧЕСКОГО КОНТЕНТА ========== */
+        .legal-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .legal-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .legal-content h2 {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .legal-content p, .legal-content li {
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+        .legal-content ul {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+        .legal-content .last-updated {
+            opacity: 0.6;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== МОБИЛЬНАЯ АДАПТАЦИЯ ========== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .nav-links {
+                gap: 16px;
+                justify-content: center;
+            }
+
+            .nav-links a {
+                font-size: 0.85rem;
+            }
+
+            .theme-toggle {
+                padding: 6px 12px;
+                font-size: 0.85rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .legal-content h1 {
+                font-size: 2rem;
+            }
+            .legal-content h2 {
+                font-size: 1.4rem;
+            }
+            .btn-primary, .btn-outline {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            .footer {
+                padding: 30px 0;
+                font-size: 0.7rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .legal-content h1 {
+                font-size: 1.6rem;
+            }
+            .legal-content h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body class="dark">
+<div class="bg-glow"></div>
+
+<div class="container">
+    <nav>
+        <div class="logo"><span class="gradient-text">VPS-VPN</span></div>
+        <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+            <div class="nav-links">
+                <a href="/">Главная</a>
+                <a href="/#tech">Технология</a>
+                <a href="/#features">Преимущества</a>
+                <a href="/#platforms">Устройства</a>
+                <a href="blog.html">📝 Блог</a>
+                <a href="access.html" class="btn-primary" style="padding: 8px 20px; background: linear-gradient(95deg, #7c3aff, #5a2dca);">🚀 Купить</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+                <i class="fas fa-sun"></i>
+                <span style="font-size: 0.9rem;">Светлая</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="legal-content">
+        <h1>Условия использования</h1>
+        <div class="last-updated">Последнее обновление: 28 июля 2026 г.</div>
+
+        <p>Добро пожаловать на VPS-VPN! Используя наш сервис, вы соглашаетесь с нижеследующими условиями. Пожалуйста, внимательно их прочитайте.</p>
+
+        <h2>1. Описание услуги</h2>
+        <p>Мы предоставляем <strong>персональный выделенный VPS/VPN-сервер</strong> с уникальным IP-адресом для каждого клиента. Сервис включает:</p>
+        <ul>
+            <li>Полноценный VPS с установленным защищённым VPN-протоколом (XHTTP+Reality).</li>
+            <li>До 10 одновременных подключений (устройства не ограничены).</li>
+            <li>Техническую поддержку в течение всего срока подписки.</li>
+            <li>Автоматическую замену сервера в случае блокировки (в течение 60 секунд).</li>
+        </ul>
+
+        <h2>2. Регистрация и оплата</h2>
+        <p>Для получения доступа необходимо оплатить выбранный тариф. После оплаты вы получите на указанную почту:</p>
+        <ul>
+            <li>Данные для подключения (IP, порт, ключи).</li>
+            <li>Инструкцию по настройке на всех поддерживаемых устройствах.</li>
+        </ul>
+        <p>Оплата производится через надёжные платёжные системы (банковские карты, криптовалюта по запросу). Все цены указаны в российских рублях.</p>
+
+        <h2>3. Права и обязанности пользователя</h2>
+        <p><strong>Вы обязуетесь:</strong></p>
+        <ul>
+            <li>Не использовать сервис для незаконной деятельности (распространение вредоносного ПО, спам, взломы, DDoS-атаки, распространение запрещённого контента).</li>
+            <li>Не нарушать авторские права и не осуществлять действия, нарушающие законодательство РФ и страны размещения сервера.</li>
+            <li>Бережно относиться к учётным данным и не передавать их третьим лицам (за исключением членов семьи в рамках одного тарифа).</li>
+        </ul>
+        <p><strong>Вы имеете право:</strong></p>
+        <ul>
+            <li>Использовать сервер для любых целей, не запрещённых законом.</li>
+            <li>Подключать до 10 устройств одновременно.</li>
+            <li>Обращаться в поддержку по техническим вопросам.</li>
+        </ul>
+
+        <h2>4. Наши обязательства</h2>
+        <ul>
+            <li>Обеспечить круглосуточную работу сервера (SLA 99,9%).</li>
+            <li>Предоставить замену сервера в случае блокировки IP с минимальной задержкой.</li>
+            <li>Не хранить логи использования (no-logs).</li>
+            <li>Конфиденциальность ваших персональных данных (см. <a href="privacy.html">Политику конфиденциальности</a>).</li>
+        </ul>
+
+        <h2>5. Порядок возврата средств</h2>
+        <p>Мы предлагаем <strong>30-дневную гарантию возврата</strong>. Если в течение первых 30 дней с момента покупки вы не удовлетворены качеством услуги, вы можете запросить полный возврат денег. Для этого напишите нам на support@vps-vpn.online с указанием причины. Возврат производится на ту же платёжную систему, которой вы пользовались.</p>
+
+        <h2>6. Ответственность сторон</h2>
+        <p>Мы не несём ответственности за:</p>
+        <ul>
+            <li>Действия пользователя, нарушающие законодательство.</li>
+            <li>Потери данных, произошедшие по вине пользователя (отсутствие бэкапов и т.п.).</li>
+            <li>Недоступность сервиса из-за форс-мажорных обстоятельств (стихийные бедствия, военные действия, решения государственных органов).</li>
+        </ul>
+        <p>Максимальная сумма ответственности ограничена стоимостью оплаченного периода.</p>
+
+        <h2>7. Изменение условий</h2>
+        <p>Мы можем пересматривать настоящие условия с уведомлением пользователей за 14 дней до вступления изменений в силу (по электронной почте или через сайт). Продолжение использования сервиса после изменений означает ваше согласие с новой редакцией.</p>
+
+        <h2>8. Заключительные положения</h2>
+        <ul>
+            <li>Все споры решаются путём переговоров, при невозможности — в судебном порядке по месту нахождения компании (Россия).</li>
+            <li>Если какое-либо положение будет признано недействительным, остальные сохраняют силу.</li>
+            <li>Настоящие условия регулируются законодательством РФ.</li>
+        </ul>
+
+        <h2>9. Контакты</h2>
+        <p>По всем вопросам, связанным с условиями использования, пишите:</p>
+        <p><i class="fas fa-envelope"></i> support@vps-vpn.online</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 VPS-VPN — Ваш личный выделенный сервер. Никаких «соседей» по IP. Серверы вне РФ, логи не хранятся.</p>
+        <p style="margin-top: 8px;">
+            <i class="fas fa-envelope"></i> support@vps-vpn.online &nbsp;|&nbsp;
+            <a href="blog.html"><i class="fas fa-blog"></i> Блог</a> &nbsp;|&nbsp;
+            <a href="privacy.html">Политика конфиденциальности</a> &nbsp;|&nbsp;
+            <a href="terms.html">Условия использования</a>
+        </p>
+    </div>
+</div>
+
+<script>
+    (function() {
+        function setTheme(theme) {
+            const isLight = theme === 'light';
+            document.body.classList.toggle('light', isLight);
+            document.body.classList.toggle('dark', !isLight);
+            localStorage.setItem('vpsvpn_theme', theme);
+            const toggleBtn = document.getElementById('themeToggle');
+            if (toggleBtn) {
+                toggleBtn.innerHTML = isLight 
+                    ? '<i class="fas fa-moon"></i><span style="font-size: 0.9rem;">Тёмная</span>'
+                    : '<i class="fas fa-sun"></i><span style="font-size: 0.9rem;">Светлая</span>';
+            }
+        }
+        function initTheme() {
+            const saved = localStorage.getItem('vpsvpn_theme');
+            setTheme(saved === 'light' ? 'light' : 'dark');
+        }
+        document.getElementById('themeToggle')?.addEventListener('click', () => {
+            const isLight = document.body.classList.contains('light');
+            setTheme(isLight ? 'dark' : 'light');
+        });
+        initTheme();
+    })();
+</script>
+
+</body>
+</html>
